@@ -34,6 +34,8 @@
 		F18F847E2B0F3F560085AAB8 /* CounterTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F847D2B0F3F560085AAB8 /* CounterTrackingView.swift */; };
 		F1A66E662B109BD600952F89 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A66E652B109BCF00952F89 /* CoreLocationManager.swift */; };
 		F1A8AE342B25C102007D7820 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1A8AE332B25C102007D7820 /* DeviceKit */; };
+		F1E800B02DE062C500B7079D /* NewMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E800AF2DE062C200B7079D /* NewMotionManager.swift */; };
+		F1E800B42DE067E800B7079D /* FSbnw.png in Resources */ = {isa = PBXBuildFile; fileRef = F1E800B32DE067E800B7079D /* FSbnw.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		F182A5142B0F249400D42C94 /* MapTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTrackingView.swift; sourceTree = "<group>"; };
 		F18F847D2B0F3F560085AAB8 /* CounterTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTrackingView.swift; sourceTree = "<group>"; };
 		F1A66E652B109BCF00952F89 /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
+		F1E800AF2DE062C200B7079D /* NewMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMotionManager.swift; sourceTree = "<group>"; };
+		F1E800B32DE067E800B7079D /* FSbnw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FSbnw.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +128,6 @@
 				F1A66E652B109BCF00952F89 /* CoreLocationManager.swift */,
 				F13B1B362B0C7D48008B1FF5 /* ColorHexExtension.swift */,
 				F18F847C2B0F3F420085AAB8 /* TrackingView */,
-				F182A5172B0F249D00D42C94 /* New Group */,
 				F10990B52B0B0AAE002665D9 /* Info.plist */,
 				C1E9503B2B144AB9007584BA /* DailyChallenges.swift */,
 				F12613B32B070F2B00619FD6 /* gymguruApp.swift */,
@@ -136,6 +139,7 @@
 				AF22DB7A2B1B113A0087F99D /* UserDataManager.swift */,
 				F161A2DC2B1AE59D00668B94 /* Untitled_design-removebg-preview.png */,
 				F1766E3C2B19943000524687 /* iTunesArtwork@2x.png */,
+				F1E800B32DE067E800B7079D /* FSbnw.png */,
 				F12613B92B070F2D00619FD6 /* Assets.xcassets */,
 				F12613BB2B070F2D00619FD6 /* Preview Content */,
 				C1E950392B1429FF007584BA /* Colour+Codable.swift */,
@@ -159,16 +163,10 @@
 			path = "Setup Views";
 			sourceTree = "<group>";
 		};
-		F182A5172B0F249D00D42C94 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		F18F847C2B0F3F420085AAB8 /* TrackingView */ = {
 			isa = PBXGroup;
 			children = (
+				F1E800AF2DE062C200B7079D /* NewMotionManager.swift */,
 				F182A5142B0F249400D42C94 /* MapTrackingView.swift */,
 				F18F847D2B0F3F560085AAB8 /* CounterTrackingView.swift */,
 			);
@@ -251,6 +249,7 @@
 				F161A2DD2B1AE59E00668B94 /* Untitled_design-removebg-preview.png in Resources */,
 				F12613BD2B070F2D00619FD6 /* Preview Assets.xcassets in Resources */,
 				F12613BA2B070F2D00619FD6 /* Assets.xcassets in Resources */,
+				F1E800B42DE067E800B7079D /* FSbnw.png in Resources */,
 				F1766E3D2B19943000524687 /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E800B02DE062C500B7079D /* NewMotionManager.swift in Sources */,
 				F14A59C62B0DE2A1006246F8 /* ChallengesView.swift in Sources */,
 				F1114E572B0C53AA00C191B1 /* MoreSettingsView.swift in Sources */,
 				F1A66E662B109BD600952F89 /* CoreLocationManager.swift in Sources */,
@@ -412,9 +412,9 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = gymguru/gymguru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"gymguru/Preview Content\"";
-				DEVELOPMENT_TEAM = VYG284C3Z9;
+				DEVELOPMENT_TEAM = MK2VQ82S9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gymguru/Info.plist;
@@ -428,11 +428,12 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "Privacy\\ -\\ Location\\ Always\\ and\\ When\\ In\\ Use\\ Usage\\ Description UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.2023.fitstreak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -452,9 +453,9 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = gymguru/gymguru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"gymguru/Preview Content\"";
-				DEVELOPMENT_TEAM = VYG284C3Z9;
+				DEVELOPMENT_TEAM = MK2VQ82S9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gymguru/Info.plist;
@@ -468,11 +469,12 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "Privacy\\ -\\ Location\\ Always\\ and\\ When\\ In\\ Use\\ Usage\\ Description UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.2023.fitstreak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

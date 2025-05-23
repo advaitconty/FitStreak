@@ -103,9 +103,8 @@ struct MapTrackingView: View {
     )
     @Namespace var mapscope
     @StateObject var locationManager = NewLocationManager()
-    @ObservedObject var motionManager = MotionManager()
+    @StateObject var motionManager = NewMotionManager()
     let updateInterval = 0.1
-    @State var speed = 0.0
     @State var timeElapsed: TimerDisplayObject = TimerDisplayObject()
     @State var timerDisplay = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Binding var userData: UserInfo
@@ -145,9 +144,6 @@ struct MapTrackingView: View {
                     Button {
                         locationManager.resumeLocationUpdates()
                         startMotionUpdates()
-                        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
-                            speed = 0
-                        }
                         isTimerRunning = true
                         timeElapsed.seconds -= 1
                     } label: {
